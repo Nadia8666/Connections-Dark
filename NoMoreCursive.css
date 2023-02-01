@@ -1,47 +1,50 @@
 /* ==UserStyle==
 @name           No More Cursive
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
 @updateURL	https://raw.githubusercontent.com/Nadia8666/Connections-Dark/main/NoMoreCursive.css
 @description   	RemoveAllCursive
 @author         Me
-@match		https://connexus.com/*
+@match		*connexus.com/*
+@match		https://*.connexus.com/*
+@include		https://*.connexus.com/*
+@include		https://www.connexus.com/*
 ==/UserStyle== */
 
-.span::after {
+.span {
 	font-family: "Arial", sans-serif !important;
 }
-.p::after {
+.p {
 	font-family: "Arial", sans-serif !important;
 }
-.h1::after {
+.h1 {
 	font-family: "Arial", sans-serif !important;
 }
-.h2::after {
+.h2 {
 	font-family: "Arial", sans-serif !important;
 }
-.h3::after {
+.h3 {
 	font-family: "Arial", sans-serif !important;
 }
-.h4::after {
+.h4 {
 	font-family: "Arial", sans-serif !important;
 }
 
-span::after {
+span {
 	font-family: "Arial", sans-serif !important;
 }
-p::after {
+p {
 	font-family: "Arial", sans-serif !important;
 }
-h1::after {
+h1 {
 	font-family: "Arial", sans-serif !important;
 }
-h2::after {
+h2 {
 	font-family: "Arial", sans-serif !important;
 }
-h3::after {
+h3 {
 	font-family: "Arial", sans-serif !important;
 }
-h4::after {
+h4 {
 	font-family: "Arial", sans-serif !important;
 }
