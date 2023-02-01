@@ -2,7 +2,7 @@
 @name           No More Cursive
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description   	RemoveAllCursive
+@description   	Removes all cursive from connexus.com
 @author         Me
 ==/UserStyle== */
 
