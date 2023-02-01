@@ -1,0 +1,1071 @@
+/* ==UserStyle==
+@name           Connexus Dark | Modernized
+@namespace      github.com/openstyles/stylus
+@version        1.0.5
+@description    Dark theme for connexus.com. Got sick of looking at the light-only site. Some pages still don't have full coloring but all the essential pages are full dark mode. Any left-out pages will be done... soon-ish. First ever attempt at skinning, ZERO CSS experience. sorry for any mistakes lol. Wonder why there are zero "working" connexus skins anymore? Uses a custom icon set I had to make, some things aren't moved over yet.
+@author         CheesiX8
+==/UserStyle== */
+
+/* Core Connexus Skin */
+
+@-moz-document domain("connexus.com") {
+	
+    /* Connexus */
+	
+	body {
+		background-color: #fff0;
+	}
+	
+	/* Others */
+	div.RadGrid table.rgMasterTable tbody tr td a.templateLink {
+		color: #7da9ff;
+	}
+	
+	.headerText h2 {
+		color: #fff;
+		font-family: 'Arial', sans-serif;
+	}
+	
+	.ForumPostHeader {
+		background-color: #181818;
+	}
+	
+	.ForumPostContent, .ForumPostContent p, .ForumPostContent div, .ForumPostContent td {
+		background-color: #222222;
+	}
+	
+	.cmwWrapper .cmwFormWrapper h1 {
+		color: #ffffff;
+		font-family: "Arial", sans-serif;
+	}
+	
+	input#titleTextBox.field.required.superField {
+		background: #fff0;
+	}
+	
+	div.cmwLogo img {
+		filter: invert(1);
+	}
+	
+	/* Assesments Full tab */
+	
+	label.lrn-label {
+		background: #1e1e1e;
+	}
+	
+	div.lrn-region-group.lrn-group-middle div {
+		background: #0000;
+	}
+	
+	.lrn.lrn-assess .lrn-vertical-toc .lrn-pager .slides-vertical-pagination {
+		background: #202020;
+	}
+	
+	.lrn.lrn-assess .lrn-region .top-right-wrapper .pos-left, .lrn.lrn-assess .lrn-region .bottom-right-wrapper .pos-left {
+		background: #3c3c3c;
+	}
+	
+	div.student-details-time.ng-binding {
+		background: #303030 !important;
+	}
+	div.student-details-description.ng-binding {
+		background: #303030 !important;
+	}
+	
+	div.loading-bar-wrapper.ng-scope.loading-in-progress {
+		background: #242424 !important;
+	}
+	
+	div.course-details-table-wrapper.cxlBody.student-event-details.ng-scope {
+		background: #303030 !important;
+	}
+	
+	.lrn.lrn-assess .toc .lrn-pager li.pagination-active a {
+		background: #6b6b6b;
+	}
+	
+	.lrn.lrn-assess .toc .lrn-pager li.pagination-active a:hover {
+		background: #6b6b6b;
+	}
+	
+	.lrn.lrn-assess.lrn-md .lrn-right-region .pagination-item a {
+		background: #3c3c3c;
+	}
+	
+	
+	ul.menuWithDropdown {
+		background: #1a1a1a;
+	}
+	.subNav > ul {
+		background: #1a1a1a;
+		border-bottom: none;
+	}
+	
+	h1#pageTitleHeaderText {
+		background: #1a1a1a;
+		margin: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	div.cxlWrapper.cxForm.ng-isolate-scope {
+		background: #000000a1 !important;
+	}
+	
+	div#subNav.subNav {
+		background: #1a1a1a !important;
+		margin: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-bottom: none;
+	}
+	
+	.lrn.lrn-assess .assess-dropdown .dropdown .dropdown-menu {
+		background-color: #242424 !important;
+	}
+	
+	.lrn.lrn-assess .assess-dropdown .dropdown .dropdown-menu .lrn_btn {
+		background-color: #262626 !important;
+	}
+	.lrn.lrn-assess.lrn-md .lrn-right-region .pagination-item a:hover {
+		background: #555;
+		transition-duration: 0.05s;
+		transition-property: all;
+		width: 95%;
+	}
+	
+	.lrn.lrn-assess .lrn-right-region .right-wrapper {
+		background: #0000;
+	}
+	
+	.lrn.lrn-assess .lrn-right-region .right-wrapper.lrn-right-region-verticaltoc-standalone .lrn-vertical-toc {
+		border-right: 0px solid #d9d9d9;
+	}
+	.lrn.lrn-assess .lrn-bottom-right-region.lrn-align-top {
+		background: #0000;
+	}
+	.lrn.lrn-assess .lrn-vertical-toc .lrn-pager {
+		border: 0px solid #d9d9d9;
+	}
+	
+	div.student-details.ng-scope {
+		width: 100%;
+		max-width: none;
+	}
+	
+	.col-12 {
+		display: block;
+		float: none;
+		padding: 0 0px;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.student-details {
+		padding: 1px 18px;
+		background: #2d2d2d !important;
+	}
+	
+	ul.item-grid.attempted-item {
+		background: #0b6d1b !important;
+	}
+	
+	.lrn.lrn-assess .app-panel.review-screen .panel-content {
+		border: 1px solid #d9d9d9;
+		background-color: #242424 !important;
+		margin-right: -5px;
+		min-height: 352px;
+	}
+	
+	.lrn.lrn-assess .app-panel.review-screen .item-card {
+		border: 1px solid #d9d9d9;
+		background-color: #9c1313 !important;
+	}
+	
+	div.mainContent {
+		background: #2d2d2d !important;
+		border-left: 0px #2d2d2d solid;
+		border-top: 0px #2d2d2d solid;
+		width:  100%;
+		
+	}
+	div.row.learnosity-whole-container {
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+		height: 95vh;
+	}
+	
+	.main-content {
+		border-left: 0px #2d2d2d solid;
+	}
+	
+	/* Login */
+	
+	
+	div.loginWrapper {
+		position: relative;
+		background: #2d2d2d;
+		height: 100% !important;
+		padding: 200px 0 !important;
+	}
+	div.loginPage div.loginWrapper div.loginContent fieldset.loginForm a.submit {
+		background: #202020 !important;
+		text-shadow: 0px 0px !important;
+		box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+	}
+	div.loginPage div.loginWrapper div.loginContent fieldset.loginForm a.submit:hover {
+		transition-property: all;
+		transition-duration: 00.2s;
+		background: #586d82 !important;
+		text-shadow: 0px 0px !important;
+		box-shadow: inset 0 1px 0 rgb(255 255 255 / 30%), 0 1px 2px rgb(0 0 0 / 10%) !important;
+		-webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 30%), 0 1px 2px rgb(0 0 0 / 10%) !important;
+	}
+	
+	div#loginContent {
+		background: #2d2d2d;
+	}
+	div.loginContent {
+		background: #2d2d2d;
+		position: relative;
+		margin: auto !important;
+		float: none !important;
+	}
+	
+	div.feedbackWrapper {
+		max-width: none;
+	}
+	div.loginFooterWrapper div.loginFooter {
+		max-width: none;
+	}
+	
+	.cxForm input[type=text].field, .cxForm .datagridCondensed input[type=text], .cxForm input[type=email].field, .cxForm input[type=password].field, .cxForm input[type=tel].field, .cxForm input[type=url].field, .cxForm input[type=date].field, .cxForm textarea.field, .cxForm select.field, .cxField, .cxForm .locationTreeDropDown {
+		background: #fff0;
+	}
+	
+	a.caButtonHolder input, a.caButtonHolderHover input {
+		color: #000 !important;
+	}
+	
+	img#loginLogoImage {
+		filter: invert(1);
+	}
+	
+	div.loginPage div.loginWrapper div.loginContent div.loginMain h1  {
+		color: #fff;
+	}
+	div.loginPage div.loginWrapper div.loginContent div.loginMain {
+		background: #242424;
+	}
+	
+	
+	div.loginSupport {
+		background: #242424;
+	}
+	
+	/* Planner */
+	.RadScheduler_Office2007 div.rsHeader .rsPrevDay {
+		
+		background-image: url('https://lh5.googleusercontent.com/IQqejh5ylZXhGPVuNVaPqM9tbbKJ9bvpRVir4e8HavrKlk1lAp9fvwx-jiThKuNy67Ty6v6o72VjSNEgJ_4AVLk=w1280') !important;
+	}
+	
+	.RadScheduler_Office2007 div.rsHeader .rsNextDay {
+		/*
+		transform: scaleX(-1);
+		background-position: 0px 0px;
+		background-size: 17px 17px;
+		background-repeat: repeat;
+		
+		*/
+		background-image: url('https://lh5.googleusercontent.com/IQqejh5ylZXhGPVuNVaPqM9tbbKJ9bvpRVir4e8HavrKlk1lAp9fvwx-jiThKuNy67Ty6v6o72VjSNEgJ_4AVLk=w1280') !important;
+	}
+	
+	.RadScheduler_Office2007 .rsSpacerCell, .RadScheduler_Office2007 .rsAllDayHeader, .RadScheduler_Office2007 .rsVerticalHeaderWrapper, .RadScheduler_Office2007 .rsVerticalHeaderTable {
+		background: #242424;
+	}
+	
+	.RadScheduler_Office2007 .rsHeader, .RadScheduler_Office2007 .rsHeader ul a:hover, .RadScheduler_Office2007 .rsHeader ul a:hover span, .RadScheduler_Office2007 .rsHeader .rsSelected, .RadScheduler_Office2007 .rsHeader .rsSelected em, .RadScheduler_Office2007 .rsHeader .rsDatePickerActivator, .RadScheduler_Office2007 .rsHeader .rsPrevDay, .RadScheduler_Office2007 .rsHeader .rsNextDay {
+		background-color: #fff0;
+		background-image: none;
+	}	
+	
+	.RadScheduler_Office2007 .rsNonWorkHour, .RadScheduler_Office2007 .rsSunCol, .RadScheduler_Office2007 .rsSatCol {
+		background: #242424;
+	}
+	.RadScheduler_Office2007 .rsContentTable td {
+		border-style: solid;
+		border-color: #646464;
+	}
+	
+	div.rsHeader h2 {
+		color: #fff
+	}
+	
+	.RadScheduler_Office2007 .rsHeader a {
+		color: #c6e7ff;
+	}
+	
+	.RadScheduler_Office2007 .rsHorizontalHeaderTable th {
+		background-image: none;
+		border-color: #fff;
+		color: #fff;
+		background-color: #242424;
+	}
+	
+	.RadScheduler_Office2007 div.rsFooter a {
+		color: #fff;
+	}
+	.RadScheduler_Office2007 div.rsFooter a:hover {
+		color: #fff;
+	}
+	
+	.RadScheduler_Office2007 div.rsFooter {
+		background: #242424;
+		background-image: none;
+	}
+	
+	.clickableEvent a:link, .clickableEvent a:hover, .clickableEvent a:visited, .clickableEvent a:active {
+		color: #5c5c5c !important;
+	}
+	
+	.RadScheduler_Office2007 .rsAllDayRow td, .RadScheduler_Office2007 .rsContentTable .rsAllDayRow td {
+		border-color: #fff;
+		background: #242424;
+	}
+	
+	th.rsAllDayHeader div, table.rsVerticalHeaderTable th span, table.rsVerticalHeaderTable th div {
+		color: #fff;
+	}
+	
+	a.rsDateHeader {
+		color: #fff !important;
+		background: #242424;
+	}
+
+	
+	table.datagridCondensed {
+		border: 2px solid #ffffff !important;
+		border-left: 2px !important;
+	}
+	
+	html {
+		background: #1e1e1e;
+	}
+	
+	.links-and-contacts-wrapper {
+		background: #0000;
+	}
+	
+	section.links-wrapper {
+		background: #1e1e1e !important;
+	}
+	
+	section.contact-us-wrapper {
+		background: #1e1e1e !important;
+	}
+	
+	span.compactEventTime {
+		color: #383838 !important;
+	}
+	
+	tr {
+		border-color: #fff !important;
+	}
+	
+	table {
+		border-color: #fff0;
+	}
+	
+	
+	/* Webmail */
+	
+	
+	.additionalFields li button, .additionalFields li a {
+		color: #9dceff !important;
+	}
+	
+	.cxForm select.field, select.cxField {	
+		background: #484848 !important;
+	}
+	
+	.cxForm input, .cxForm textarea, .cxForm select {
+		font-family: "Arial", sans-serif;
+		color: #fff !important;
+	}
+	
+	.cxForm select.longField {
+		background: #525252 !important;
+	}
+	
+	.cxForm fieldset legend {
+		display: block;
+		margin: 0;
+		padding: 20px 0 8px;
+		width: 100%;
+		border-bottom: 1px solid #dedede;
+		color: #fff;
+		font-weight: 700;
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+	.cxForm .primaryLabel {
+		color: #fff;
+		font-weight: 700;
+		line-height: 120%;
+	}
+	
+	.cke_combo_text {
+		line-height: 26px;
+		padding-left: 10px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		float: left;
+		cursor: default;
+		color: #474747 !important;
+		text-shadow: 0 1px 0 rgb(0 0 0 / 0%);
+		width: 60px;
+	}
+	
+	.cke_top {
+		border-top: 0px;
+		border-bottom: 0px solid #b6b6b6;
+		padding: 6px 8px 2px;
+		white-space: normal;
+		box-shadow: 0 1px 0 #fff inset;
+		background: #161616 !important;
+		background-image: none;
+		filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#f5f5f5',endColorstr='#cfd1cf');
+	}
+	
+	.dialogForm {
+		background: #222 !important;
+		border: 1px solid #000 !important;
+		border-radius: 3px;
+		box-shadow: 0 0 5px #666;
+		margin: 100px auto 0 auto;
+		padding: 12px 15px;
+		z-index: 20000;
+	}
+	
+	body.cke_editable.cke_editable_themed.cke_contents_ltr.cke_show_borders div {
+		background: #fff0 !important;
+	}
+	
+	.cke_bottom {
+		padding: 6px 8px 2px;
+		position: relative;
+		border-top: 0px solid #bfbfbf !important;
+		box-shadow: 0 1px 0 #fff inset;
+		background: #242424 !important;
+		background-image: none !important;
+		filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#ebebeb',endColorstr='#cfd1cf');
+	}
+	
+	.webMailCompose .cxForm .formLabels .primaryLabel {
+		color: #fff;
+	}
+	
+	.webMailCompose .cxForm .formRow.messageSubject .formLabels, .webMailCompose .cxForm .formRow.messageSubject input#messageSubject {
+		background: #fff0;
+	}
+	
+	body button.addressBtn {
+		display: block !important;
+		width: 100% !important;
+		padding: 5px !important;
+		border: 2px !important;
+		border-radius: 3px !important;
+		-webkit-border-radius: 3px !important;
+		background: #141414 !important;
+		background-image: none !important;
+		background-position: 0 0px !important;
+		background-repeat: repeat-x !important;
+		color: #222 !important;
+		text-align: right !important;
+		text-decoration: none !important;
+		text-shadow: none !important;
+		font-family: "Arial", sans-serif !important;
+		font-weight: normal !important;
+		font-size: 13px !important;
+		font-size: 1.3rem !important;
+		line-height: 1.3em !important;
+		cursor: pointer !important;
+		-webkit-transition: all linear 0.1s !important;
+		transition: all cubic-bezier(0.45, 0.05, 0.55, 0.95) 0.1s !important;
+		-webkit-text-shadow: none !important;
+	}
+	
+	.cke_top {
+		border-top: 0px;
+		border-bottom: 0px solid #b6b6b6;
+		padding: 6px 8px 2px;
+		white-space: normal;
+		box-shadow: 0 1px 0 #fff inset;
+		background: #242424;
+		background-image: none;
+		filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#f5f5f5',endColorstr='#cfd1cf');
+	}
+	
+	div.webMailViewerContentContainer.messages {
+		background: #fff0;
+	}
+	
+	.messageTitle {
+		background: #0000;
+	}
+	
+	p, .p {
+		background: #0000 !important;
+	}
+	
+	body .cxBtn, .ie8 div .cxBtnLegacy {
+		border: 1px solid;
+		border-color: #fff;
+	}
+	.otherActions .popupMenu.settingsMenu {
+		background: #2d2d2d;
+	}
+	
+	.helpPanel .helpContent h3 {
+		color: #fff;
+	}
+	
+	.helpPanel .expandedSection {
+		background: #242424;
+	}
+	
+	body .cxPrimaryBtn, body .cxPrimaryBtnLegacy {
+		border: 1px solid;
+		border-color: #fff;
+	}
+	
+	body .cxBtn, .ie8 div .cxBtnLegacy {
+		text-shadow: 0px 0px;
+		background: #141414 0 0px repeat-x;
+	}
+	
+	.webMailGrid tr.unread td {
+		color: #fff !important;
+		font-weight: normal;
+		background: #0000 !important;
+	}
+	
+	.webMailGrid tr th {
+		color: #fff;
+	}
+	
+	.folderTreeContent {
+		background: #fff0;
+		border-bottom: 0px;
+		border-left: 0px;
+		border-right: 0px;
+		border-top: 0px;
+	}
+	
+	.addFolder button {
+		border: 0px !important;
+		background: #383838 !important;
+		color: #fff !important;
+	}
+	
+	.cxTree div.folderSelected > div.folderRow {
+		background: #fff0;
+		border-top: 0px dotted #fff;
+		border-bottom: 0px dotted #fff;
+	}
+	
+	.cxTree div.folderSelected > div.folderRow:hover {
+		color: #fffce3;
+		background: #0000 !important;
+		border-top: 2px dotted #fff;
+		border-bottom: 2px dotted #fff;
+	}
+	.cxTree li div.folderRow:hover, .cxTree li .focusHighlight div.folderRow {
+		color: #fff295;
+		background: #0000 !important;
+		border-top: 2px dotted #fff;
+		border-bottom: 2px dotted #fff;
+	}
+	
+	.cxTree li div.folderContainer {
+		color: #fff;
+		background: #0000 !important;
+		border-top: 0px dotted #fff;
+		border-bottom: 0px dotted #fff;
+	}
+
+	
+	.webMailGrid .pagination {
+		background: #0000 !important;
+	}
+	
+	.webMailGrid td {
+		text-shadow: 0px 0px 0px #0000;
+		color: #a6a6a6 !important;
+		background: #0000 !important;
+	}
+	
+	
+	.webMailGrid tr.unread a {
+		color: #fff !important;
+		background: #0000 !important;
+	}
+	
+	.webMailGrid td a {
+		color: #919191 !important;
+	}
+	
+	.mailBoxWrapper {
+		background: #0000 !important;
+	}
+	
+	.mailBoxWrapper h3 {
+		color: #fff;
+		background: #0000 !important;
+	}
+	
+	.folderPane {
+		background: #242424 !important;
+	}
+	
+	/* Main home-page */
+	
+	/* Date Text */
+	.homepage-tabs li a.active-tab, .homepage-tabs li a.active-tab:hover, .homepage-tabs li a.active-tab:active, .homepage-tabs li a.active-tab:visited {
+		color: #fff;
+	}
+	
+	/* Top taps text */
+	.homepage-tabs li a, .homepage-tabs li a:active, .homepage-tabs li a:visited {
+		color: #fff;
+	}
+	/* Set all top tabs BG color */
+	.homepage-tabs li a {
+		background: #484848;
+		color: #fff;
+	}
+	/* core dark 1 */
+	.contentWrapper {
+		background: #9c9c9c;
+	}
+	
+	/* core dark 2 */
+	
+	.st-my-teachers-wrapper .st-my-teachers h3 {
+		background-color: #195555;
+		
+	}
+	
+	.student-homepage .st-lessons-section td.st-lesson-name-column a.st-lesson-column:hover {
+		background: #9c9c9c;
+	}
+	
+	div.asideTacticBoxBorderTop {
+		border-top: 6px solid #787878;
+		padding-bottom: 1.25em;
+		border-radius: 4px;
+	}
+	
+	.jss4:hover {
+		background: #383838;
+		border: 2px dashed;
+		border-color: #050505;
+	}
+	.jss4 {
+		background: #202020;
+		border: 2px solid !important;
+		border-color: #fff !important;
+	}
+	
+	div.asideTacticBoxBorderBottom {
+		border-bottom: 6px solid #787878;
+		padding-top: 0;
+		border-radius: 10px;
+	}
+	
+	body#ctl00_lmuContentBody {
+		overflow: hidden;
+	}
+	
+	body {
+		color: #242424;
+		overflow: inherit;
+	}
+	/* make core text white */
+	div {
+		background: #242424;
+    	color: #fff !important;
+	}	
+	a:link {
+		color: #c7daff;
+	}
+	
+	
+	/* LIVE LESSON LINKS */
+	.mainContent a {
+		color: #99cfff;
+		border-left: 0px solid #f5f5f5;
+	}
+	
+	.cxlContent h2 {
+		color: #fff;
+	}
+	
+	.cxlContent {
+		background: #303030;
+	}
+	
+	a:visited, a:hover, .aHover, a:active {
+		color: #d98eff;
+	}
+	
+	.mainContent a:visited {
+		color: #d98eff;
+	}
+	
+	
+	.st-my-teachers-wrapper .st-my-teachers .st-teacher-list > li .st-teacher-card .st-teacher-aux-text {
+		color: #fff;
+	}
+	
+	.st-my-teachers-wrapper .st-my-teachers .st-teacher-list > li .st-teacher-card {
+		background-color: #2a2a2a;
+	}
+	
+	.st-my-teachers-wrapper .st-my-teachers {
+		background-color: #1e1e1e;
+	}
+	
+	/* Lesson Selector */
+	.student-homepage .ct-user-box-additional {
+		color: #fff;
+		background: #fff0;
+	}
+	.student-homepage .event-additional-information {
+		color: #fff;
+		background: #fff0;
+	}
+	
+	.student-homepage .st-today-table th {
+		background: #262626; 
+		color: #fff;
+	}
+	
+	/* Overdue Lessons Page */
+	
+	.Shade, .shade {
+		background: #0000;
+	}
+	
+	
+	
+	#lessons_ctl11_completionBorder {
+		background: #0000;
+	}
+	#lessons_ctl11_completion {
+		background: #0000;
+	}
+	
+	#pageTitleHeaderText {
+		background: #00000000;
+	}
+	
+	.DataGridCondensed, .dataGridCondensed {	
+		background: #00000000 !important;
+	}
+	
+	h1 {
+		color: #ffffff;	
+	}
+	
+	.homepage-tabs li a.active-tab, .homepage-tabs li a.active-tab:hover, .homepage-tabs li a.active-tab:active, .homepage-tabs li a.active-tab:visited {
+		border-radius: 10px;
+		border-color: #0000;
+	}
+	
+	.homepage-tabs li a, .homepage-tabs li a:active, .homepage-tabs li a:visited {
+		border-radius: 5px;
+		border-color: #0000;
+	}
+
+	div.OutlineElement.Ltr.SCXW100780986.BCX0 {
+		background: #fff0 !important;
+	}
+	
+	element.style {
+		background: #fff0;
+	}
+	
+	.st-my-teachers-wrapper .st-my-teachers h2 {
+		color: #fff;
+	}
+	
+	.cxForm h2, h2.cxHeader {
+		color: #ffffff;	
+	}
+	
+	.student-homepage a.gradebook-link {
+		color: #fff !important;
+	}
+	
+	.pvs-footer-wrapper {
+		background-color: #1e1e1e;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding: 32px 0;
+		line-height: 20px;
+		color: #392f3d;
+	}
+	
+	.header-skeleton {
+		min-height: 131.2px;
+		background-repeat: no-repeat;
+		background-image: linear-gradient(to top, rgb(255, 255, 255) 6px, transparent 0),
+		linear-gradient(to top, rgb(114 35 98) 96px, transparent 0),
+		linear-gradient(to top, rgb(92 26 77) 131.2px, transparent 0) !important;
+	}
+	
+	.pvs-header-wrapper {
+		align-items: center !important;
+		border-bottom: 2px solid rgb(255, 255, 255) !important;
+	}
+	
+	.ct-user-box .ct-user-box-title-wrapper .ct-user-box-title {
+		color: #fff;
+	}
+	
+	.cxForm .datagridCondensed td {
+		color: #fff;
+	}
+
+	.cxForm h3, h3.cxHeader {
+		color: #fff;
+	}
+	
+	.cxForm .datagridCondensed tr.shade {
+		background-color: #0000 !important;
+	}
+	
+	th, .th {
+		background-color: #0000;
+	}
+	
+	.cxForm .datagridCondensed tr.th td, .cxForm .datagridCondensed th {
+		color: #fff !important;
+		background: #0000 !important;
+	}
+	
+	.student-homepage .st-lessons-section td.st-lesson-name-column a.st-lesson-column .st-course-title {
+		color: #fff;
+	}
+	
+	.cxForm fieldset legend a.toggle, .cxForm .invalidMessage, .cxForm .validMessage, .cxForm .invalidMessageOverlay, .cxIcon {
+		background-image: url('https://lh4.googleusercontent.com/q_Ui2pfipEjWwGty1AsHBp_NaVd9cP7aQmDtun6qd_cs8NK7DYVnWZhyX5nq48BHFHDD7tbjdL4DX-XnDquNbkK9voQIWRMDfW8Gdy_xaUWxe7fyBEp2wTXeN8fac0gn2w=w1280');
+	}
+	
+	
+	.assessmentetailDisplayWrapper {
+		background: #0000;
+	}
+	
+	.assessmentDetailDisplay {
+		background: #0000;
+	}
+	
+	.cxForm h4, h4.cxHeader {
+		color: #fff;
+	}
+	
+	p, .p {
+		color: #fff;
+		background: #0000;
+	}
+	
+	.subNav {
+		background: #141414 !important;
+	}
+	
+	.subNav > ul > li > a {
+		color: #fff;
+	}
+	
+	.cxForm table.datagridCondensed tr.dataGridPager > td {
+		background: #0000 !important;
+		color: #fff;
+	}
+	
+	.fileGallery .multipleFileUpload .fileType {
+		background: #242424;
+		border: 0px;
+	}
+	
+	.fileGallery .multipleFileUpload .name {
+		background: rgb(32 32 32);
+		border-top: 1px solid #545454;
+	}
+	
+	
+	/* LESSONS */ 
+	
+	.absolute-content-wrapper {
+		box-shadow: 0 5px 17px #4949495e;
+	}
+	
+	.doc-types .active span {
+		background-color: rgba(248, 247, 205, 0);
+	}
+	
+	.content-header-text {
+		background: #1e1e1e;
+		border: 2px solid #ffffff;
+    	border-radius: 4px;
+	}
+	#introPageFooter {
+		background: #0000;
+	}
+	
+	span {
+		color: #fff !important;
+	}
+	
+	#btnStartLesson {
+		color: #fff;
+		background: #0000;
+	}
+	
+	style attribute {
+		color: #fff;
+	}
+	
+	.wysiwygBody, .wysiwygBody P, .body TD {
+		color: #fff;
+	}
+	
+	.drag-target {
+		width: 0px;
+	}
+	
+	.lesson-note-button {
+		height: 105%;
+	}
+	
+	#btnBackToIntro {
+		background: #1a1a1a;
+		color: #fff;
+	}
+	
+	.lesson-completion > span:hover {
+		color: #ff0004 !important;
+	}
+	
+	.material-icons.default:hover {
+		color: #ff0004 !important;
+	}
+	
+	p {
+		font-family: "Arial", sans-serif;
+		font-weight: normal;
+		color: white !important;
+	}
+	
+	li {
+		font-family: "Arial", sans-serif;
+		font-weight: normal;
+		color: white !important;
+	}
+	
+	label {
+		font-family: "Arial", sans-serif;
+		font-weight: normal;
+		color: white !important;
+	}
+	
+	h1 {
+		font-family: sans-serif;
+		font-weight: bold;
+		color: white !important;
+	}
+	
+	h2 {
+		font-family: "Arial";
+		font-weight: normal;
+		color: white !important;
+	}
+	h3 {
+		font-family: "Arial";
+		font-weight: normal;
+		color: white !important;
+	}
+	h4 {
+		font-family: "Arial";
+		font-weight: normal;
+		color: white !important;
+	}
+	span {
+		font-family: "Arial";
+		font-weight: normal;
+		color: white !important;
+	}
+	
+	.material-icons.default {
+		color: #fff;
+	}
+	
+	.material-icons {
+		color: #fff;
+	}
+	
+	a#ctl00_printButton {
+		height: 105%;
+	}
+	
+	header nav {
+		object-position: -1000px 0px;
+		position: relative;
+		height: 50px;
+		width: 100%;
+		background: #1a1a1a;
+	}
+	
+	div.header-lesson-note-button {
+		background: #fff0
+	}
+	
+	div.header-buttons-right {
+		background: #fff0
+	}
+	
+	.lesson-completion {
+		border: 0px;
+	}
+	
+	.absolute-content-wrapper {
+		background: #242424 !important;
+	}
+	
+}
+
+/* Gradebook color fix */
+
+@-moz-document url("https://www.connexus.com/gradeBook/") {
+
+	div.mainContent {
+		background: #242424 !important;
+	}
+}
+
+/* Overdue lessons reused-object-name color match */
+@-moz-document url-prefix("https://www.connexus.com/planner/overdueLessons.aspx") {
+	div.contentWrapper {
+		background: #2d2d2d !important;
+	}
+}
+
+/* Homepage reused-object-name color match */
+@-moz-document url-prefix("https://www.connexus.com/homepage#/student/today") {
+	div.contentWrapper {
+		background: #242424 !important;
+	}
+}
