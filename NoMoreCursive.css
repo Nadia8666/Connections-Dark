@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No More Cursive
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @updateURL	https://raw.githubusercontent.com/Nadia8666/Connections-Dark/main/NoMoreCursive.css
 @description   	RemoveAllCursive
 @author         Me
@@ -11,13 +11,27 @@
 @include		https://www.connexus.com/*
 ==/UserStyle== */
 
-.span {
-	font-family: "Arial", sans-serif !important;
-	font-size: 22px;
-}
-
 span {
 	font-family: "Arial", sans-serif !important;
-	font-size: 22px;
+	font-size: 17.25px;
 }
-
+p {
+	font-family: "Arial", sans-serif !important;
+	font-size: 17.25px;
+}
+h1 {
+	font-family: "Arial", sans-serif !important;
+	font-size: 17.25px;
+}
+h2 {
+	font-family: "Arial", sans-serif !important;
+	font-size: 17.25px;
+}
+h3 {
+	font-family: "Arial", sans-serif !important;
+	font-size: 17.25px;
+}
+h4 {
+	font-family: "Arial", sans-serif !important;
+	font-size: 17.25px;
+}
