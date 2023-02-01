@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           No More Cursive
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @updateURL	https://raw.githubusercontent.com/Nadia8666/Connections-Dark/main/NoMoreCursive.css
 @description   	RemoveAllCursive
 @author         Me
-@match		*://connexus.com/*
+@match		https://connexus.com/*
 ==/UserStyle== */
 
 .span::after {
