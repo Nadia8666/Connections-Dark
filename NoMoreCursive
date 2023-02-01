@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name           No More Cursive
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description   	RemoveAllCursive
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("connexus.com") {
+    /* Insert code here... */
+	
+	span {
+		font-family: "Arial", sans-serif !important;
+	}
+	p {
+		font-family: "Arial", sans-serif !important;
+	}
+	h1 {
+		font-family: "Arial", sans-serif !important;
+	}
+	h2 {
+		font-family: "Arial", sans-serif !important;
+	}
+	h3 {
+		font-family: "Arial", sans-serif !important;
+	}
+	h4 {
+		font-family: "Arial", sans-serif !important;
+	}
+}
