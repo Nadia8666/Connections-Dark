@@ -2,8 +2,9 @@
 @name           No More Cursive
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description   	Removes all cursive from connexus.com
+@description   	RemoveAllCursive
 @author         Me
+@match		*://connexus.com/*
 ==/UserStyle== */
 
 @-moz-document domain("connexus.com") {
