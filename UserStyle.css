@@ -1,22 +1,270 @@
 /* ==UserStyle==
 @name           Connexus Dark | Modernized
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.1.8
 @description    Dark theme for connexus.com. Got sick of looking at the light-only site. Some pages still don't have full coloring but all the essential pages are full dark mode. Any left-out pages will be done... soon-ish. First ever attempt at skinning, ZERO CSS experience. sorry for any mistakes lol. Wonder why there are zero "working" connexus skins anymore? Uses a custom icon set I had to make, some things aren't moved over yet.
 @author         CheesiX8
 ==/UserStyle== */
 
-/* Core Connexus Skin */
 
+/* --UPDATE LOG-- */
+
+/*	2/6/2023 #1
+
+	Made fonts around assesments more consistent.
+
+		#2
+	Inline-assesments' text is now selectable, makes it easier to take notes and makes the site more consistent (As external assesments' DO have selectable text.)
+*/
+
+/*	2/1/2023 #1
+
+	Added support for inline/in-lesson assesments.
+	Also added support for popup prompts/boxes
+
+		#2
+	Better integrated the WYSIWYG bodys into dark mode, (rounded corners lol)
+
+		#3
+	Cleaned up external assesment pages, and added some cool hover effects
+
+		#4
+	Quck hotfix for the gradebook
+*/
+
+
+
+
+/* Core Connexus Skin */
 @-moz-document domain("connexus.com") {
 	
     /* Connexus */
+	
+	img[alt="angle"] {
+	   filter: invert(1);
+	}
+	
+	.lrn.lrn-assess .app-panel.review-screen .panel-content, .lrn.lrn-assess .app-panel.review-screen .panel-footer {
+		background-color: #fff0!important;
+		margin-top: 20px;
+	}
 	
 	body {
 		background-color: #fff0;
 	}
 	
+	div#customLessonContent {
+		border-radius: 10px !important;
+	}
+	
+	div.intro-page-content {
+		border-radius: 10px !important;
+	}
+	
+	#ng-app {
+		overflow-x: hidden;
+	}
+	
+	/* Inline assesments */
+	/*
+	div.progress.pos-middle {
+		position: absolute !important;
+		transform: translateY(-50%);
+		scale: 100% 150%;
+	}
+	
+	div.lrn.lrn-assess.lrn-xs.lrn-sm.lrn-md.lrn-lg.lrn-no-bottom-regions {
+		position: relative !important;
+		float: none;
+		transform: translateY(40%);
+	}
+	*/
+	
+	div.questionText {
+		user-select: text !important;
+	}
+	
+	p.assessmentQuestionFirstParagraph {
+		font-family: 'Arial', sans-serif;
+	}
+	
+	svg.MuiSvgIcon-root.rightArrow {
+		filter: invert(1);
+	}
+	
+	svg.MuiSvgIcon-root.leftArrow {
+		filter: invert(1);
+	}
+	
+	div.navigationFooter.White.undefined {
+		background: #1a1a1a;
+	}
+	
+	div.panel-footer {
+		background: #fff0;
+	}
+	
+	button.lrn_btn.item-prev.pos-left {
+		background: #fff0 !important;
+	}
+	button.lrn_btn.item-prev.pos-left:hover {
+		background: #fff6 !important;
+	}
+	
+	button.lrn_btn.cancel {
+		color: #fff !important;	
+	}
+	
+	button.lrn_btn.cancel:hover {
+		color: #000 !important;	
+	}
+	
+	div.lrn-assess-modal-content.modal-content {
+		transition-duration: 1s;
+		transition-property: all;
+		background: #222;
+	}
+	div.lrn-assess-modal-content.modal-content:hover {
+		transition-duration: 1s;
+		transition-property: all;
+		background: #111;
+	}
+	
+	button#dLabel.lrn_btn.assess-dropdown-menu.dropdown-toggle {
+		background: #ffff0300 !important;	
+		filter: invert(1);
+	}
+	button#dLabel.lrn_btn.assess-dropdown-menu.dropdown-toggle:hover {
+		background: #fff6 !important;
+		filter: invert(0);
+	}
+	
+	li.lrn-mcq-option:hover {
+		background: #fff;
+	}
+	
+	#learnosityContainer {
+		overflow-y: hidden !important;
+	}
+	
+	div#testPane {
+		overflow: hidden !important;
+	}
+	
+	div.lrn-dialog-content {
+		background-color: #242424 !important;
+	}
+	
+	div#lmuContent {
+		border-radius: 10px !important;
+	}
+	
+	img {
+		border-radius: 5px;
+	}
+	
+	div#bodyWrapper {
+		border-radius: 10px !important;
+	}
+	
+	body.wysiwygBody.lmuContent {
+		background: #1e1e1e !important;
+		border-radius: 50px !important;
+	}
+	a.assessmentStartButton, a.assessmentTakeButton, a.assessmentPreviewButton, a.assessmentConfirmTakeButton, a.assessmentCancelTakeButton {
+		background: linear-gradient(to bottom, #4c4c4c 0%, #202020 100%);
+		color: #fff;
+	}
+	a.assessmentStartButton:hover {
+		transition-duration: .1s;
+		transition-property: all;
+		background: linear-gradient(to bottom, #1a1a1a 0%, #4d4d4d 100%);
+	}
+	
+	.assessment-type {
+		border-radius: 25px;
+		background-color: #5c5c5c00;
+	}
+	
+	#courseToolsList a {
+		color: rgb(255 255 255);
+		font-size: 1.6em;
+		background-color: #00000026;
+		padding: 15px 10px;
+	}
+	
+	div.TelerikModalOverlay {
+		background: #00000082 !important;
+	}
+	
+	div.caradwindowbutton div.buttonmiddle {
+		background: #2b2b2b !important;
+	}
+	div.caradwindowbutton div.buttonleft {
+		border-radius: 25px;
+		background: #2b2b2b !important;
+	}
+	div.caradwindowbutton div.buttonright {
+		background: #2b2b2b !important;
+	}
+	
+	div.caradwindowbuttonhover:hover div.buttonmiddle {
+		background: #494949 !important;
+	}
+	div.caradwindowbuttonhover:hover div.buttonleft {
+		background: #494949 !important;
+	}
+	div.caradwindowbuttonhover:hover div.buttonright {
+		background: #494949 !important;
+	}
+	
+	div.caradwindowbutton {
+		background: #2b2b2b !important;
+	}
+	
+	table.rwTitlebarControls {
+		background: #222 none !important;
+	}
+	
+	td.rwCorner.rwBodyRight {
+		background: #222 none !important;
+	}
+	td.rwCorner.rwTopRight {
+		background: #222 none !important;
+	}
+	
+	td.rwCorner.rwBodyLeft {
+		background: #222 none !important;
+	}
+	td.rwCorner.rwTopLeft {
+		background: #222 none !important;
+	}
+	
+	
+	td.rwCorner.rwFooterLeft {
+		background: #222 none !important;
+	}
+	td.rwCorner.rwFooterRight {
+		background: #222 none !important;
+	}
+	td.rwFooterCenter {
+		background: #222 none !important;
+	}
+	
+	div.RadWindow_Vista .rwTitlebarControls em {
+    	color: #fff !important;
+	}
+	
+	td.rwWindowContent {
+		background: #242424 !important;
+	}
+	
 	/* Others */
+	
+	.modal .modal-footer {
+		background-color: #1e1e1e;
+	}
+	
 	div.RadGrid table.rgMasterTable tbody tr td a.templateLink {
 		color: #7da9ff;
 	}
@@ -267,7 +515,7 @@
 	/* Planner */
 	.RadScheduler_Office2007 div.rsHeader .rsPrevDay {
 		
-		background-image: url('https://lh5.googleusercontent.com/IQqejh5ylZXhGPVuNVaPqM9tbbKJ9bvpRVir4e8HavrKlk1lAp9fvwx-jiThKuNy67Ty6v6o72VjSNEgJ_4AVLk=w1280') !important;
+		background-image: url('https://i.ibb.co/tPnnM9h/image.png') !important;
 	}
 	
 	.RadScheduler_Office2007 div.rsHeader .rsNextDay {
@@ -278,7 +526,7 @@
 		background-repeat: repeat;
 		
 		*/
-		background-image: url('https://lh5.googleusercontent.com/IQqejh5ylZXhGPVuNVaPqM9tbbKJ9bvpRVir4e8HavrKlk1lAp9fvwx-jiThKuNy67Ty6v6o72VjSNEgJ_4AVLk=w1280') !important;
+		background-image: url('https://i.ibb.co/tPnnM9h/image.png') !important;
 	}
 	
 	.RadScheduler_Office2007 .rsSpacerCell, .RadScheduler_Office2007 .rsAllDayHeader, .RadScheduler_Office2007 .rsVerticalHeaderWrapper, .RadScheduler_Office2007 .rsVerticalHeaderTable {
@@ -646,9 +894,7 @@
 		color: #fff;
 	}
 	/* core dark 1 */
-	.contentWrapper {
-		background: #9c9c9c;
-	}
+	
 	
 	/* core dark 2 */
 	
@@ -862,7 +1108,7 @@
 	}
 	
 	.cxForm fieldset legend a.toggle, .cxForm .invalidMessage, .cxForm .validMessage, .cxForm .invalidMessageOverlay, .cxIcon {
-		background-image: url('https://lh4.googleusercontent.com/q_Ui2pfipEjWwGty1AsHBp_NaVd9cP7aQmDtun6qd_cs8NK7DYVnWZhyX5nq48BHFHDD7tbjdL4DX-XnDquNbkK9voQIWRMDfW8Gdy_xaUWxe7fyBEp2wTXeN8fac0gn2w=w1280');
+		background-image: url('https://i.ibb.co/vk8TQKR/icon-Sprites.png');
 	}
 	
 	
@@ -1045,12 +1291,20 @@
 		background: #242424 !important;
 	}
 	
+	.contentWrapper {
+		background: #9c9c9c;
+	}
+	
 }
 
 /* Gradebook color fix */
 
-@-moz-document url("https://www.connexus.com/gradeBook/") {
+@-moz-document url-prefix("https://www.connexus.com/gradeBook") {
 
+	.contentWrapper {
+		background: #242424 !important;
+	}
+	
 	div.mainContent {
 		background: #242424 !important;
 	}
@@ -1063,9 +1317,31 @@
 	}
 }
 
+
 /* Homepage reused-object-name color match */
 @-moz-document url-prefix("https://www.connexus.com/homepage#/student/today") {
 	div.contentWrapper {
 		background: #242424 !important;
 	}
 }
+
+/* libary color match hotfix */
+
+@-moz-document url-prefix("https://www.connexus.com/library/") {
+	.contentWrapper {
+		background: #2d2d2d !important;
+	}
+	div contentWrapper {
+		background: #2d2d2d !important;
+	}
+	div.contentWrapper {
+		background: #2d2d2d !important;
+	}
+}
+
+@-moz-document url-prefix("https://www.connexus.com/communication/directory") {
+	.contentWrapper {
+		background: #1a1a1a !important;
+	}
+}
+
